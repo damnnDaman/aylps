@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  background-color: #12161f;
+  margin: 5px 0px 5px 0px;
+  margin-top: 2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+  color: white;
+  /* border: 1px solid red; */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.4s ease-in forwards;
+}
+
+/* Glowing text effect */
+.glow {
+    color: #fff;
+    text-shadow:
+        /* bright core */
+        0 0 5px rgba(255, 255, 255, 0.9),
+        0 0 10px rgba(255, 255, 255, 0.7),
+        /* mid-range magenta glow */
+        0 0 20px rgba(0, 17, 255, 0.432),
+        0 0 30px rgba(214, 207, 214, 0.5),
+        /* outer soft glow */
+        0 0 50px rgba(124, 120, 124, 0.4),
+        0 0 80px rgba(87, 83, 87, 0.3);
+    animation: glow-pulse 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow-pulse {
+    from {
+        text-shadow:
+            0 0 3px rgba(255, 255, 255, 0.8),
+            0 0 8px rgba(255, 255, 255, 0.6),
+            0 0 15px rgba(109, 105, 109, 0.5),
+            0 0 25px rgba(75, 71, 75, 0.4),
+            0 0 40px rgba(206, 200, 206, 0.3),
+            0 0 65px rgba(99, 96, 99, 0.2);
+    }
+
+    to {
+        text-shadow:
+            0 0 7px rgba(255, 255, 255, 1),
+            0 0 12px rgba(255, 255, 255, 0.8),
+            0 0 25px rgba(82, 77, 82, 0.7),
+            0 0 35px rgba(90, 84, 90, 0.6),
+            0 0 55px rgba(87, 84, 87, 0.5),
+            0 0 90px rgba(58, 54, 58, 0.4);
+    }
+}
