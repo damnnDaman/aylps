@@ -18,10 +18,10 @@ export const Header = ({text}) => {
           {/* Navigation Links */}
           <nav className="text-md border-b-2">
             <a
-              href="#about"
+              href="/"
               className="inline-block transform transition-transform duration-300 ease-in-out hover:scale-120 md:p-4 p-2 md:text-xl sm:text-xl "
             >
-              About Us
+              Home
             </a>
             <a
               href="services"
