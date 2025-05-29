@@ -10,14 +10,14 @@ const Home = () => {
 
 
   return (
-    <div className=''>
+    <div className='bg-black'>
 
-      <div className='position-absolute z-index-2'>
+      <div className='text-white '>
 
         <Header text ="As you Like Tour and Travels" />
       </div>
     
-      <div className='position-relative'>
+      <div className=''>
 
     <GlobeScene />
 

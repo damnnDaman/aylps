@@ -9,13 +9,13 @@ console.log(text)
        
         
         initial={{ width: 0}}
-        style={{ overflow: "hidden", whiteSpace: "nowrap", display: "inline-block" }}
+        style={{ overflow: "hidden", whiteSpace: "nowrap", display: "inline-block" , fontFamily: "poppins"}}
         animate={{ width: "100%" }}
         exit={{ width: 0 }}
 
         transition={{ duration: 2, ease: "easeInOut", delay: 0.1 }}
-
-        className=" py-3  font-semibold md:text-4xl sm:text-2xl"
+        // style={{ fontFamily: "sans-serif" }}
+        className=" py-3 color-white-100 font-semibold  md:text-4xl sm:text-2xl"
         
     >{text.text}</motion.div>
     
